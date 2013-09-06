@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import pygame
 import cPickle
-from musicplayer import *
 from pygame.locals import *
 from classes import *
 from game import *
@@ -30,7 +29,6 @@ class Menu(object):
                 return False
             for button in self.menu:
                 try:
-                    tet = button.data
                     button.update(pygame.time.get_ticks())
                 except:
                     pass
